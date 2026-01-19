@@ -1,6 +1,6 @@
 # weather-app
 
-**Live Demo:** weather-app-xi-lovat-99.vercel.app
+**Live Demo:** [weather-app-xi-lovat-99.vercel.app](https://weather-app-xi-lovat-99.vercel.app/)
 Weather App — приложение, которое показывает текущую погоду по городу.
 
 ## Features
