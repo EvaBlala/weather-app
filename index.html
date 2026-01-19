@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Погода в России</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body class="weather-clear">
+  <!-- слой с дождём (будет только при плохой погоде) -->
+  <div class="rain-overlay"></div>
+  <div class="scene"></div>
+
+
+  <div class="app">
+    <header class="app-header">
+      <h1>Погода сегодня</h1>
+      <p class="subtitle">Актуальные данные по городам России</p>
+    </header>
+
+    <main class="app-main">
+      <!-- Панель поиска -->
+      <section class="search-panel">
+        <label for="city-input">Город:</label>
+        <div class="search-row">
+          <input
+            id="city-input"
+            type="text"
+            placeholder="Например: Москва"
+          >
+          <button id="search-btn">Показать</button>
+        </div>
+
+        <p class="hint">Быстрый выбор:</p>
+        <div class="quick-cities">
+          <button class="quick-city" data-city="Москва">Москва</button>
+          <button class="quick-city" data-city="Санкт-Петербург">Санкт-Петербург</button>
+          <button class="quick-city" data-city="Екатеринбург">Екатеринбург</button>
+          <button class="quick-city" data-city="Новосибирск">Новосибирск</button>
+          <button class="quick-city" data-city="Казань">Казань</button>
+        </div>
+      </section>
+
+      <!-- Карточка погоды -->
+      <section class="weather-card" id="weather-card">
+        <div class="weather-main-row">
+          <div class="weather-info">
+            <h2 id="city-name">Выберите город</h2>
+            <p id="weather-desc">Пока данных нет.</p>
+          </div>
+          <div class="weather-icon-block">
+            <div class="weather-icon-circle">
+              <span id="weather-emoji">☁️</span>
+            </div>
+            <div class="weather-temp">
+              <span id="temp-value">--</span>
+              <span class="temp-unit">°C</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="weather-extra">
+          <div class="extra-item">
+            <span class="extra-label">Ощущается как</span>
+            <span class="extra-value" id="feels-like">-- °C</span>
+          </div>
+          <div class="extra-item">
+            <span class="extra-label">Влажность</span>
+            <span class="extra-value" id="humidity">-- %</span>
+          </div>
+          <div class="extra-item">
+            <span class="extra-label">Ветер</span>
+            <span class="extra-value" id="wind">-- м/с</span>
+          </div>
+        </div>
+
+        <p class="status-line" id="status-line">
+          Введите город и нажмите «Показать».
+        </p>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>Данные погоды через OpenWeatherMap · Проект для портфолио</p>
+    </footer>
+  </div>
+</body>
+</html>
