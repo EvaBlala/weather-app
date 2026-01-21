@@ -1,7 +1,7 @@
 # weather-app
 
 **Live Demo:** [weather-app-xi-lovat-99.vercel.app](https://weather-app-xi-lovat-99.vercel.app/)
-Weather App — приложение, которое показывает текущую погоду по городу.
+Weather App — приложение, которое показывает текущую погоду по городам России.
 
 ## Features
 - Поиск погоды по названию города
